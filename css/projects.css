@@ -1,0 +1,422 @@
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+/* =Header
+---------- */
+header {
+  width: 100%;
+  height: 115px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  padding:0 5%; 
+
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+
+header #logo {
+  display: inline-block;
+  width: 50%;
+  height: 115px;
+  float: left;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header h1 {
+  font-family: "Monoton", Helvetica;
+  color: black;
+  font-size: 5em;
+  font-weight: 300;
+  line-height: 1em;
+  width: 60%;
+  height: 105px;
+  float: left;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header h1:after{
+    content: "clairesunstudio";
+}
+
+/*header #logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}*/
+
+header.smaller {
+  height: 70px;
+  background-color: rgba(255,255,255,.7);
+  vertical-align: middle;
+}
+
+header.smaller #logo {
+  width: 90px;
+  height: 70px;
+}
+
+header.smaller h1 {
+  font-size: 3em;
+  width: 90px;
+  height: 60px;
+  line-height: 1.2em;
+
+
+}
+
+header.smaller h1:after{
+  content: "CSS";
+
+}
+
+
+
+
+header nav {
+  display: inline-block;
+  float: right;
+
+}
+header nav a {
+  line-height: 115px;
+  margin-left: 20px;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header nav a:hover {
+  padding:2px; 
+  border:2px solid black;
+  border-radius: 5%;
+}
+
+header.smaller nav a {
+  line-height: 80px
+}
+
+
+/* =Extras
+---------- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+
+
+
+
+
+
+body, button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.box{
+  margin-top: 10%;
+}
+
+.controls{
+  padding: 2%;
+  background: white;
+  color: #eee;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+  color: black;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  margin-top: .3em;
+  background: black;      /*button color*/
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #FF0066;  /*button selected color*/
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: white;     /*background color*/
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 30%;
+}
+
+.container .mix{
+  text-align: left;
+  background: black;        /*boxes color*/
+  margin-bottom: 2%;
+  display: none;
+  background-size: cover;
+/*  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);*/
+}
+
+
+
+
+                                  /*colorcoding for category*/
+/*.container .mix.category-1{
+  border-top: 2px solid red;
+}*/
+
+
+.container .mix{
+  position: relative;
+}
+
+.container .mix:after{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  content: attr(alt); 
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgba(0,0,0,.7);
+  padding: 1em;
+  visibility: hidden;
+
+}
+
+.container .mix:hover:after{
+  visibility: visible;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+.container .mix:hover {
+ /* background-color: rgba(0,0,0,.3);*/
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); 
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%); 
+  -o-filter: grayscale(100%);
+
+}
+
+
+
+/*@media all and (max-width: 1140px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    header h1{font-size: 3em}
+
+
+ 
+
+}*/
+
+
+/*header size responsive*/
+
+@media all and (max-width: 1140px) {
+    header h1{font-size: 4em}
+    header nav a {
+        line-height: 100px;
+        margin: 0 10px;
+    }
+  }
+
+
+@media all and (max-width: 980px) {
+    header { height: 90px}
+    header h1{font-size: 3em}
+    header nav a {
+        line-height: 80px;
+        margin: 0 10px;
+    }
+  }
+
+@media all and (max-width: 780px) {
+    header{
+      padding-left: -5%;
+    }
+
+    header.smaller{
+      padding: 0 5%;
+    }
+    header h1#logo {
+        display: block;
+        float: none;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: 80px;
+        text-align: center;
+
+    }
+    #logo a {
+      text-decoration: none;
+    }
+    header h1{
+      display: block;
+      font-size: 2.5em;
+        float: none;
+        margin: 0 auto;
+        margin-left: 25%;
+        height: 80px;
+        text-align: center;
+      
+    }
+    header nav {
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        margin-left:-20%;
+    }
+    header nav a {
+       margin: 0 10px;
+        line-height: 140px;
+    }
+    header.smaller nav {
+        float: right;
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 80px
+    }
+  .controls{
+  padding-top: 10%;
+  }
+  }
+
+@media all and (max-width: 580px){
+      header h1{
+      margin-left: 10%;
+      font-size: 2em;
+      }
+    header nav {
+      margin-left:-28%;
+    }
+    header nav a {
+      line-height: 130px;
+    }
+}
+
+@media all and (max-width: 420px){
+      header h1{
+      margin-left: 2%;
+      font-size: 2em;
+      }
+      .controls{
+      padding-top: 15%;
+      }
+}
+
+/*boxes size responsive*/
+
+
+
+
+@media all and (min-width: 720px), screen and (max-width: 1024px) and (orientation : landscape){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 1072px){
+  .container .mix,
+  .container .gap{
+    width: 23.5%;
+  }
+
+}
+
+
+@media all and (max-width: 419px) and (min-width: 300px){
+  .container .mix,
+  .container .gap{
+    width: 96%;
+  }
+}
+
+@media all and (max-width: 719px) and (min-width: 420px) and (orientation : portrait){
+  .container .mix,
+  .container .gap{
+    width: 48%;
+  }
+}
