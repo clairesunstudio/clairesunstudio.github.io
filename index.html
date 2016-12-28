@@ -1,286 +1,224 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TCJF9Q4');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <title>Claire Sun Studio</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/projects.css">
-
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/jquery.mixitup.min.js"></script>
   <script src="js/header.js"></script>
+
+  <!-- Facebook Open-graph metadata -->
+  <meta property="og:title" content="Claire Sun Studio" />
+  <meta property="og:description" content="Welcome to my personal porfolio website." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clairesunstudio.github.io/" />
+  <meta property="fb:admins" content="1266533259" />
+  <meta property="og:image" content="img/portfolio/draw.jpg" />
 </head>
 
 
 
 <body>
-<div class="box">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCJF9Q4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="box">
 
 
-<header>
-    <div class='inner clearfix'>
+    <header>
+      <div class='inner clearfix'>
         <div id="logo">
           <a href="#">
-          <h1></h1>
+            <h1></h1>
           </a>
         </div>
         <nav>
-            <a href="http://clairesun.com/mdd/img/resume.pdf" target="_blank">ABOUT</a>
-            <a href="https://www.linkedin.com/profile/view?id=163219752&authType=name&authToken=Px-t" target="_blank">CONTACT</a>
+          <a href="http://clairesun.com/mdd/img/resume.pdf" target="_blank">ABOUT</a>
+          <a href="https://www.linkedin.com/profile/view?id=163219752&authType=name&authToken=Px-t" target="_blank">CONTACT</a>
 
         </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+
+
+    <div class="controls">
+
+
+
+      <label>Filter:</label>
+
+      <button class="filter" data-filter="all">All</button>
+      <button class="filter" data-filter=".category-1">Web Design</button>
+      <button class="filter" data-filter=".category-3">Data Visualization</button>
+      <button class="filter" data-filter=".category-2">UI</button>
+      <button class="filter" data-filter=".category-10">UX</button>
+      <button class="filter" data-filter=".category-4">Social Media</button>
+      <button class="filter" data-filter=".category-5">Print Design</button>
+      <button class="filter" data-filter=".category-6">Interactive</button>
+      <button class="filter" data-filter=".category-7">Flash</button>
+      <button class="filter" data-filter=".category-8">Animation</button>
+      <button class="filter" data-filter=".category-9">Patterns</button>
+      <button class="filter" data-filter=".category-11">Painting</button>
+      <button class="filter" data-filter=".category-12">Installation</button>
+
+      <br/>
+      <label>Sort:</label>
+
+      <button class="sort" data-sort="myorder:asc">Newest</button>
+      <button class="sort" data-sort="myorder:desc">Oldest</button>
+
     </div>
-</header><!-- /header -->
+    <div id="Container" class="container">
+
+      <!-- mdd -->
+      <a href="http://clairesunstudio.github.io/mdd" target="_blank" alt="MDD (My DMI Diary) is a responsive website designed to document my experience at the Dynamic Media Institute. <In progress> " class="mix category-1 category-6" data-myorder="1" style="background-image: url('img/portfolio/mdd.jpg')"></a>
+
+      <!-- fashion -->
+      <a href="http://clairesunstudio.github.io/rear-window/fashion.html" target="_blank" alt="This website is a proof-of-concept prototype of visualizing fashion in classic movies. Inspired by Mike Bostock's &quot;Front Row to Fashion Week&quot; built with D3, this example is built with css and javascript.  <Under Construction>  "
+      class="mix category-1 category-2 category-3 category-6" data-myorder="1" style="background-image: url('img/portfolio/fashion.jpg')"></a>
 
 
+      <!-- bnbgirls -->
+      <a href="http://clairesunstudio.github.io/scroll-bnb/bnb.html" target="_blank" alt="Bright&amp;Beautiful is a non-for-profit organization that aims at bring art education to rural Chinese girls. <Under Construction> " class="mix category-1 category-6 category-8"
+      data-myorder="0" style="background-image: url('img/portfolio/bnbgirls.jpg')"></a>
 
-<div class="controls">
+      <!-- clairesun.com -->
+      <a href="http://clairesun.com/legacy" target="_blank" alt="A portofolio site built with Flash animations." class="mix category-1 category-7" data-myorder="20" style="background-image: url('img/portfolio/website.jpg')"></a>
 
+      <!-- wefilm app -->
+      <a href="http://clairesun.com/portfolio/images/reelay-D.pdf" target="_blank" alt="UI/UX design of the collaborative project &mdash; WeFilm. The working prototype was pitched and won the 1st place at the Startup Weekend Providence 2014." class="mix category-2 category-10"
+      data-myorder="16" style="background-image: url('img/portfolio/wefilm.jpg')"></a>
 
-
-  <label>Filter:</label>
-
-  <button class="filter" data-filter="all">All</button>
-  <button class="filter" data-filter=".category-1">Web Design</button>
-  <button class="filter" data-filter=".category-3">Data Visualization</button>
-  <button class="filter" data-filter=".category-2">UI</button>
-  <button class="filter" data-filter=".category-10">UX</button>
-  <button class="filter" data-filter=".category-4">Social Media</button>
-  <button class="filter" data-filter=".category-5">Print Design</button>
-  <button class="filter" data-filter=".category-6">Interactive</button>
-  <button class="filter" data-filter=".category-7">Flash</button>
-  <button class="filter" data-filter=".category-8">Animation</button>
-  <button class="filter" data-filter=".category-9">Patterns</button>
-  <button class="filter" data-filter=".category-11">Painting</button>
-  <button class="filter" data-filter=".category-12">Installation</button>
-
-<br/>
-  <label>Sort:</label>
-
-  <button class="sort" data-sort="myorder:asc">Newest</button>
-  <button class="sort" data-sort="myorder:desc">Oldest</button>
-
-</div>
-<div id="Container" class="container">
-
-<!-- mdd -->
-  <a href="http://clairesunstudio.github.io/mdd" target="_blank"
-  alt="MDD (My DMI Diary) is a responsive website designed to document my experience at the Dynamic Media Institute. <In progress> "
-  class="mix category-1 category-6"
-  data-myorder="1"
-  style="background-image: url('img/portfolio/mdd.jpg')"></a>
-
-<!-- fashion -->
-  <a href="http://clairesunstudio.github.io/rear-window/fashion.html" target="_blank"
-  alt="This website is a proof-of-concept prototype of visualizing fashion in classic movies. Inspired by Mike Bostock's &quot;Front Row to Fashion Week&quot; built with D3, this example is built with css and javascript.  <Under Construction>  "
-  class="mix category-1 category-2 category-3 category-6"
-  data-myorder="1"
-  style="background-image: url('img/portfolio/fashion.jpg')"></a>
+      <!-- billionaire map -->
+      <a href="http://clairesunstudio.github.io/interface/map.html" target="_blank" alt="Interactive graph built with d3.js visualizing the distributions of the wealthiest 1000 billionaires in the world. <In progress>" class="mix category-6 category-3" data-myorder="2"
+      style="background-image: url('img/portfolio/billionaire.jpg')"></a>
 
 
-<!-- bnbgirls -->
-  <a href="http://clairesunstudio.github.io/scroll-bnb/bnb.html" target="_blank"
-  alt="Bright&amp;Beautiful is a non-for-profit organization that aims at bring art education to rural Chinese girls. <Under Construction> "
-  class="mix category-1 category-6 category-8"
-  data-myorder="0"
-  style="background-image: url('img/portfolio/bnbgirls.jpg')"></a>
+      <!-- cat flash -->
+      <a href="http://www.clairesun.com/portfolio/0.html" target="_blank" alt="Cat Watching TV (Flash Interactive) explores the distractions that are prevalent in today's society, and that can often take our eyes off of our responsibilities and dull our natural instincts. <Flash Player required>"
+      class="mix category-6 category-7 category-8" data-myorder="18" style="background-image: url('img/portfolio/cat.jpg')"></a>
 
-<!-- clairesun.com -->
-  <a href="http://clairesun.com/legacy" target="_blank"
-  alt="A portofolio site built with Flash animations."
-  class="mix category-1 category-7"
-  data-myorder="20"
-  style="background-image: url('img/portfolio/website.jpg')"></a>
+      <!-- chandelier flash -->
+      <a href="http://clairesun.com/legacy/ani-01.html" target="_blank" alt="Chandelier (Flash Animation With Sound) <Flash Player required>." class="mix category-7 category-8" data-myorder="19" style="background-image: url('img/portfolio/chandelier.jpg')"></a>
 
-<!-- wefilm app -->
-  <a href="http://clairesun.com/portfolio/images/reelay-D.pdf" target="_blank"
-  alt="UI/UX design of the collaborative project &mdash; WeFilm. The working prototype was pitched and won the 1st place at the Startup Weekend Providence 2014."
-  class="mix category-2 category-10"
-  data-myorder="16"
-  style="background-image: url('img/portfolio/wefilm.jpg')"></a>
+      <!-- Reelay -->
+      <a href="http://www.clairesun.com/portfolio/2.html" target="_blank" alt="Reelay Logo (ActionScript Animation With Control) <Flash Player required>." class="mix category-6 category-7 category-8" data-myorder="17" style="background-image: url('img/portfolio/reelay.jpg')"></a>
 
-<!-- billionaire map -->
-  <a href="http://clairesunstudio.github.io/interface/map.html" target="_blank"
-  alt="Interactive graph built with d3.js visualizing the distributions of the wealthiest 1000 billionaires in the world. <In progress>"
-  class="mix category-6 category-3"
-  data-myorder="2"
-  style="background-image: url('img/portfolio/billionaire.jpg')"></a>
+      <!-- map -->
+      <a href="http://clairesun.com/sun/mdd/3.html#mapping" target="_blank" alt="Map Design from user research, user testing to interface design and final package design. " class="mix category-2 category-5 category-10" data-myorder="15" style="background-image: url('img/portfolio/map.jpg')"></a>
 
+      <!-- processing draw -->
+      <a href="http://www.openprocessing.org/sketch/189145" target="_blank" alt="Drawing Tool created with Processing" class="mix category-6" data-myorder="10" style="background-image: url('img/portfolio/draw.jpg')"></a>
 
-<!-- cat flash -->
-  <a href="http://www.clairesun.com/portfolio/0.html" target="_blank"
-  alt="Cat Watching TV (Flash Interactive) explores the distractions that are prevalent in today's society, and that can often take our eyes off of our responsibilities and dull our natural instincts. <Flash Player required>"
-  class="mix category-6 category-7 category-8"
-  data-myorder="18"
-  style="background-image: url('img/portfolio/cat.jpg')"></a>
+      <!-- pattern -->
+      <a href="http://clairesunstudio.github.io/pattern/3.html" target="_blank" alt="Animated Javascript Patter designed with Logoish.js." class="mix category-8 category-9" data-myorder="4" style="background-image: url('img/portfolio/pattern1.jpg')"></a>
 
-<!-- chandelier flash -->
-  <a href="http://clairesun.com/legacy/ani-01.html" target="_blank"
-  alt="Chandelier (Flash Animation With Sound) <Flash Player required>."
-  class="mix category-7 category-8"
-  data-myorder="19"
-  style="background-image: url('img/portfolio/chandelier.jpg')"></a>
+      <!-- pattern2 -->
+      <a href="http://clairesunstudio.github.io/pattern/2.html" target="_blank" alt="Animated Javascript Patter designed with Logoish.js." class="mix category-8 category-9" data-myorder="5" style="background-image: url('img/portfolio/pattern2.jpg')"></a>
 
-<!-- Reelay -->
-  <a href="http://www.clairesun.com/portfolio/2.html" target="_blank"
-  alt="Reelay Logo (ActionScript Animation With Control) <Flash Player required>."
-  class="mix category-6 category-7 category-8"
-  data-myorder="17"
-  style="background-image: url('img/portfolio/reelay.jpg')"></a>
+      <!-- pattern3 -->
+      <a href="http://clairesunstudio.github.io/pattern/1.html" target="_blank" alt="Animated Javascript Patter designed with Logoish.js." class="mix category-8 category-9" data-myorder="6" style="background-image: url('img/portfolio/pattern3.jpg')"></a>
 
-<!-- map -->
-  <a href="http://clairesun.com/sun/mdd/3.html#mapping" target="_blank"
-  alt="Map Design from user research, user testing to interface design and final package design. "
-  class="mix category-2 category-5 category-10"
-  data-myorder="15"
-  style="background-image: url('img/portfolio/map.jpg')"></a>
+      <!-- exchange app -->
+      <a href="http://clairesun.com/sun/mdd/3.html#video" target="_blank" alt="Exchange is a mobile app for managing the wardrobe. The user interface and user experience design is demonstrated through the video." class="mix category-2 category-3 category-10"
+      data-myorder="11" style="background-image: url('img/portfolio/exchange.jpg')"></a>
 
-<!-- processing draw -->
-  <a href="http://www.openprocessing.org/sketch/189145" target="_blank"
-  alt="Drawing Tool created with Processing"
-  class="mix category-6"
-  data-myorder="10"
-  style="background-image: url('img/portfolio/draw.jpg')"></a>
+      <!-- bright & beautiful -->
+      <a href="https://www.behance.net/gallery/12284963/Bright-Beautiful-Girls-Postcards" target="_blank" alt="A collection of postcards designed for the Bright &amp; Beautiful Project &quot;Write Her A Postcard&quot; offline event. " class="mix category-4 category-5"
+      data-myorder="9" style="background-image: url('img/portfolio/bnb.jpg')"></a>
 
-<!-- pattern -->
-  <a href="http://clairesunstudio.github.io/pattern/3.html" target="_blank"
-  alt="Animated Javascript Patter designed with Logoish.js."
-  class="mix category-8 category-9"
-  data-myorder="4"
-  style="background-image: url('img/portfolio/pattern1.jpg')"></a>
+      <!-- Fresh Media -->
+      <a href="http://clairesun.com/img/freshMediaProposal.pdf" target="_blank" alt="An interactive, sensor-driven, LED installation piece showing at Fresh Media Show in Cyber Arts Gallery in May." class="mix category-6 category-12" data-myorder="3" style="background-image: url('img/portfolio/freshmedia.jpg')"></a>
 
-<!-- pattern2 -->
-  <a href="http://clairesunstudio.github.io/pattern/2.html" target="_blank"
-  alt="Animated Javascript Patter designed with Logoish.js."
-  class="mix category-8 category-9"
-  data-myorder="5"
-  style="background-image: url('img/portfolio/pattern2.jpg')"></a>
+      <!-- Robot -->
+      <a href="http://clairesunstudio.github.io/robot.html" target="_blank" alt="Interactive Robot animated in CSS3" class="mix category-6 category-8" data-myorder="7" style="background-image: url('img/portfolio/robot.jpg')"></a>
 
-<!-- pattern3 -->
-  <a href="http://clairesunstudio.github.io/pattern/1.html" target="_blank"
-  alt="Animated Javascript Patter designed with Logoish.js."
-  class="mix category-8 category-9"
-  data-myorder="6"
-  style="background-image: url('img/portfolio/pattern3.jpg')"></a>
+      <!-- Wardrobe Infograph -->
+      <a href="http://clairesun.com/img/wardrobe.pdf" target="_blank" alt="Infographic Poster" class="mix category-2 category-3" data-myorder="12" style="background-image: url('img/portfolio/wardrobe.jpg')"></a>
 
-<!-- exchange app -->
-  <a href="http://clairesun.com/sun/mdd/3.html#video" target="_blank"
-  alt="Exchange is a mobile app for managing the wardrobe. The user interface and user experience design is demonstrated through the video."
-  class="mix category-2 category-3 category-10"
-  data-myorder="11"
-  style="background-image: url('img/portfolio/exchange.jpg')"></a>
+      <!-- car -->
+      <a href="https://www.behance.net/gallery/11944049/Car-Illustration" target="_blank" alt="Automobile digital illustrations inspired by the annual &quot;British Invasion&quot; car exhibition in VT" class="mix category-2" data-myorder="23" style="background-image: url('img/portfolio/car.jpg')"></a>
 
-<!-- bright & beautiful -->
-  <a href="https://www.behance.net/gallery/12284963/Bright-Beautiful-Girls-Postcards" target="_blank"
-  alt="A collection of postcards designed for the Bright &amp; Beautiful Project &quot;Write Her A Postcard&quot; offline event. "
-  class="mix category-4 category-5"
-  data-myorder="9"
-  style="background-image: url('img/portfolio/bnb.jpg')"></a>
+      <!-- jewelry -->
+      <a href="https://www.behance.net/gallery/12086733/Jewelry" target="_blank" alt="Jewelry Triptych. (Oil on panel)" class="mix category-11" data-myorder="21" style="background-image: url('img/portfolio/jewelry.jpg')"></a>
 
-<!-- Fresh Media -->
-  <a href="http://clairesun.com/img/freshMediaProposal.pdf" target="_blank"
-  alt="An interactive, sensor-driven, LED installation piece showing at Fresh Media Show in Cyber Arts Gallery in May."
-  class="mix category-6 category-12"
-  data-myorder="3"
-  style="background-image: url('img/portfolio/freshmedia.jpg')"></a>
+      <!-- flower -->
+      <a href="http://clairesun.com/sun/legacy/art-trad.html" target="_blank" alt="Origami Roses In A Vase. (Oil on panel)" class="mix category-11" data-myorder="22" style="background-image: url('img/portfolio/flower.jpg')"></a>
 
-<!-- Robot -->
-  <a href="http://clairesunstudio.github.io/robot.html" target="_blank"
-  alt="Interactive Robot animated in CSS3"
-  class="mix category-6 category-8"
-  data-myorder="7"
-  style="background-image: url('img/portfolio/robot.jpg')"></a>
+      <!-- Student Universe -->
+      <a href="" target="_blank" alt="Digital banner ads, email campaigns, landing pages, print marketing material designs and website mockups at StudentUniverse. <examples upon request>" class="mix category-2 category-4 category-5" data-myorder="14" style="background-image: url('img/portfolio/su.jpg')"></a>
 
-<!-- Wardrobe Infograph -->
-  <a href="http://clairesun.com/img/wardrobe.pdf" target="_blank"
-  alt="Infographic Poster"
-  class="mix category-2 category-3"
-  data-myorder="12"
-  style="background-image: url('img/portfolio/wardrobe.jpg')"></a>
+      <!-- UMass -->
+      <a href="" target="_blank" alt="Designs of brochures, posters, rollup banners and videography for the University of Massachusetts Boston Confucius Institute. <examples upon request>" class="mix category-5" data-myorder="13" style="background-image: url('img/portfolio/umass.jpg')"></a>
 
-<!-- car -->
-  <a href="https://www.behance.net/gallery/11944049/Car-Illustration" target="_blank"
-  alt="Automobile digital illustrations inspired by the annual &quot;British Invasion&quot; car exhibition in VT"
-  class="mix category-2"
-  data-myorder="23"
-  style="background-image: url('img/portfolio/car.jpg')"></a>
+      <!-- Kitty and Bunny -->
+      <a href="" target="_blank" alt="Kitty and Bunny emoji <In progress>" class="mix category-4 " data-myorder="9" style="background-image: url('img/portfolio/kittybunny.jpg')"></a>
 
-<!-- jewelry -->
-  <a href="https://www.behance.net/gallery/12086733/Jewelry" target="_blank"
-  alt="Jewelry Triptych. (Oil on panel)"
-  class="mix category-11"
-  data-myorder="21"
-  style="background-image: url('img/portfolio/jewelry.jpg')"></a>
-
-<!-- flower -->
-  <a href="http://clairesun.com/sun/legacy/art-trad.html" target="_blank"
-  alt="Origami Roses In A Vase. (Oil on panel)"
-  class="mix category-11"
-  data-myorder="22"
-  style="background-image: url('img/portfolio/flower.jpg')"></a>
-
-<!-- Student Universe -->
-  <a href="" target="_blank"
-  alt="Digital banner ads, email campaigns, landing pages, print marketing material designs and website mockups at StudentUniverse. <examples upon request>"
-  class="mix category-2 category-4 category-5"
-  data-myorder="14"
-  style="background-image: url('img/portfolio/su.jpg')"></a>
-
-<!-- UMass -->
-  <a href="" target="_blank"
-  alt="Designs of brochures, posters, rollup banners and videography for the University of Massachusetts Boston Confucius Institute. <examples upon request>"
-  class="mix category-5"
-  data-myorder="13"
-  style="background-image: url('img/portfolio/umass.jpg')"></a>
-
-<!-- Kitty and Bunny -->
-  <a href="" target="_blank"
-  alt="Kitty and Bunny emoji <In progress>"
-  class="mix category-4 "
-  data-myorder="9"
-  style="background-image: url('img/portfolio/kittybunny.jpg')"></a>
-
-<!-- sister tao -->
-  <a href="" target="_blank"
-  alt="SistersTao is a Wechat official account feeding original organic articles and infographics to the followers."
-  class="mix category-4 "
-  data-myorder="8"
-  style="background-image: url('img/portfolio/sistertao.jpg')"></a>
+      <!-- sister tao -->
+      <a href="" target="_blank" alt="SistersTao is a Wechat official account feeding original organic articles and infographics to the followers." class="mix category-4 " data-myorder="8" style="background-image: url('img/portfolio/sistertao.jpg')"></a>
 
 
 
 
 
-  <div class="gap"></div>
-  <div class="gap"></div>
-</div>
-</div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+  </div>
 
-<script>
-
-//header
+  <script>
+    //header
     function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 300,
-                header = document.querySelector("header");
-            if (distanceY > shrinkOn) {
-                classie.add(header,"smaller");
-            } else {
-                if (classie.has(header,"smaller")) {
-                    classie.remove(header,"smaller");
-                }
-            }
-        });
+      window.addEventListener('scroll', function(e) {
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+          shrinkOn = 300,
+          header = document.querySelector("header");
+        if (distanceY > shrinkOn) {
+          classie.add(header, "smaller");
+        } else {
+          if (classie.has(header, "smaller")) {
+            classie.remove(header, "smaller");
+          }
+        }
+      });
     }
     window.onload = init();
-//mixitup
+    //mixitup
 
-  $(function(){
-  $('#Container').mixItUp();
-});
-</script>
+    $(function() {
+      $('#Container').mixItUp();
+    });
+  </script>
 
 
 </body>
+
 </html>
