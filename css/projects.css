@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 
 *{
   -webkit-box-sizing: border-box;
@@ -19,7 +19,7 @@ header {
   left: 0;
   z-index: 999;
   background-color: white;
-  padding:0 5%; 
+  padding:0 5%;
 
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
@@ -115,7 +115,7 @@ header nav a {
   transition: all 0.3s;
 }
 header nav a:hover {
-  padding:2px; 
+  padding:2px;
   border:2px solid black;
   border-radius: 5%;
 }
@@ -191,7 +191,7 @@ button + label{
   text-align: justify;
   font-size: 0.1px;
   background: white;     /*background color*/
-  
+
   -webkit-backface-visibility: hidden;
 }
 
@@ -214,9 +214,9 @@ button + label{
   display: none;
   background-size: cover;
 /*  filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);*/
 }
 
@@ -239,7 +239,7 @@ button + label{
   right:0;
   top:0;
   bottom: 0;
-  content: attr(alt); 
+  content: attr(alt);
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -262,9 +262,9 @@ button + label{
 .container .mix:hover {
  /* background-color: rgba(0,0,0,.3);*/
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%); 
+  -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
 
 }
@@ -284,7 +284,7 @@ button + label{
     header h1{font-size: 3em}
 
 
- 
+
 
 }*/
 
@@ -338,7 +338,7 @@ button + label{
         margin-left: 25%;
         height: 80px;
         text-align: center;
-      
+
     }
     header nav {
         float: none;
